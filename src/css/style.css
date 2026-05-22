@@ -110,6 +110,7 @@ main{
     align-items: center;
     padding: 0 100px;
     overflow: hidden;
+    margin-top: -150px;
 }
 
 .home-texto{
@@ -358,7 +359,6 @@ main{
     box-shadow:0 0 10px var(--colorsecundaria),0 0 20px var(--colorsecundaria);
     animation: carregar 3s ease forwards;
 }
-
 
 @keyframes carregar{
 
