@@ -1,0 +1,149 @@
+:root{
+    --corbg: #0B1020;
+    --corprincipal: #7C3AED;
+    --colorsecundaria: #00D4FF;
+    --branco: #F8FAFC;
+    --texto: #94A3B8;
+    --corheader: #050812;
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    background-color: var(--corbg);
+    font-family: 'Orbitron', sans-serif;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+}
+ 
+main{
+    flex: 1;
+}
+ 
+header{
+    background:var(--corheader);
+    height: 100px;
+    padding: 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 5px var(--colorsecundaria);
+    
+}
+ 
+#logo{
+    width: 75px;
+}
+ 
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.texto-logo{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.texto-logo span{
+    color: var(--colorsecundaria);
+    text-shadow:
+        0 0 10px var(--colorsecundaria),
+        0 0 20px var(--colorsecundaria),
+        0 0 40px var(--colorsecundaria);
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    list-style: none;
+}
+ 
+header nav ul li a{
+    text-decoration: none;
+    color: var(--colorsecundaria);
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    transition: .3s;
+}
+ 
+header nav ul li a:hover{
+    color: var(--branco);
+    text-shadow:
+        0 0 10px var(--colorsecundaria);
+}
+ 
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ 
+.nav-links a {
+    text-decoration: none;
+    color: var(--colorsecundaria);
+    font-weight:500;
+   
+}
+
+footer{
+    width: 100%;
+    padding: 10px;
+    background: var(--corheader);
+    border-top: 2px solid var(--colorsecundaria);
+    box-shadow: 0 -10px 15px rgba(0, 212, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-logo img{
+    width: 60px;
+}
+
+.footer-logo h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
+.footer-logo span{
+    color: var(--colorsecundaria);
+    text-shadow:
+        0 0 10px var(--colorsecundaria),
+        0 0 20px var(--colorsecundaria);
+}
+
+.footer-direitos{
+    color: var(--branco);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-info{
+    color: var(--texto);
+    font-size: 14px;
+    max-width: 800px;
+    line-height: 1.6;
+}
