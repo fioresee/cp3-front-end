@@ -104,18 +104,39 @@ main{
 }
 
 .home{
-    min-height: 100vh;
+    min-height: 55vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
     overflow: hidden;
-    margin-top: -150px;
+    margin-top: -120px;
+    position: relative;
+    background: linear-gradient(-45deg, #0B1020, #7C3AED, #00D4FF, #111827);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
 }
 
-.home-texto{
-    max-width: 600px;
+.home::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    backdrop-filter: blur(4px);
 }
+
+.home-texto,
+.home-img{
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes gradientFlow{
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+
 
 .home-texto h1{
     font-size: 90px;
@@ -160,12 +181,7 @@ main{
 }
 
 .btn-explorar{
-    background: linear-gradient(
-        135deg,
-        var(--corprincipal),
-        var(--corsecundaria)
-    );
-
+    background: linear-gradient(135deg, var(--corprincipal), var(--corsecundaria));
     color: white;
 }
 
@@ -215,6 +231,7 @@ main{
     color: var(--branco);
     margin-bottom: 60px;
     font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
 }
 
 .categorias{
