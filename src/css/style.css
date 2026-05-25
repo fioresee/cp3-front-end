@@ -1,7 +1,7 @@
 :root{
     --corbg: #0B1020;
     --corprincipal: #7C3AED;
-    --colorsecundaria: #00D4FF;
+    --corsecundaria: #00D4FF;
     --branco: #F8FAFC;
     --texto: #94A3B8;
     --corheader: #050812;
@@ -32,7 +32,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    box-shadow:0 5px 5px var(--colorsecundaria);
+    box-shadow:0 5px 5px var(--corsecundaria);
     
 }
  
@@ -54,11 +54,11 @@ header{
 }
 
 .texto-logo span{
-    color: var(--colorsecundaria);
+    color: var(--corsecundaria);
     text-shadow:
-        0 0 10px var(--colorsecundaria),
-        0 0 20px var(--colorsecundaria),
-        0 0 40px var(--colorsecundaria);
+        0 0 10px var(--corsecundaria),
+        0 0 20px var(--corsecundaria),
+        0 0 40px var(--corsecundaria);
 }
 
 header nav ul{
@@ -71,7 +71,7 @@ header nav ul{
  
 header nav ul li a{
     text-decoration: none;
-    color: var(--colorsecundaria);
+    color: var(--corsecundaria);
     font-size: 20px;
     font-weight: 600;
     position: relative;
@@ -81,7 +81,7 @@ header nav ul li a{
 header nav ul li a:hover{
     color: var(--branco);
     text-shadow:
-        0 0 10px var(--colorsecundaria);
+        0 0 10px var(--corsecundaria);
 }
  
 .nav-links{
@@ -92,7 +92,7 @@ header nav ul li a:hover{
  
 .nav-links a {
     text-decoration: none;
-    color: var(--colorsecundaria);
+    color: var(--corsecundaria);
     font-weight:500;
    
 }
@@ -125,11 +125,11 @@ main{
 }
 
 .home-texto h1 span{
-    color: var(--colorsecundaria);
+    color: var(--corsecundaria);
     text-shadow:
-        0 0 10px var(--colorsecundaria),
-        0 0 20px var(--colorsecundaria),
-        0 0 40px var(--colorsecundaria);
+        0 0 10px var(--corsecundaria),
+        0 0 20px var(--corsecundaria),
+        0 0 40px var(--corsecundaria);
 }
 
 .home-texto h2{
@@ -163,7 +163,7 @@ main{
     background: linear-gradient(
         135deg,
         var(--corprincipal),
-        var(--colorsecundaria)
+        var(--corsecundaria)
     );
 
     color: white;
@@ -176,13 +176,13 @@ main{
 }
 
 .btn-ofertas{
-    border: 2px solid var(--colorsecundaria);
+    border: 2px solid var(--corsecundaria);
 
-    color: var(--colorsecundaria);
+    color: var(--corsecundaria);
 }
 
 .btn-ofertas:hover{
-    background: var(--colorsecundaria);
+    background: var(--corsecundaria);
     color: var(--corbg);
     transform: translateY(-5px);
 }
@@ -242,7 +242,7 @@ main{
 }
 
 .card h3{
-    color: var(--colorsecundaria);
+    color: var(--corsecundaria);
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -338,7 +338,7 @@ main{
     color: white;
     letter-spacing: 3px;
     margin-bottom: 40px;
-    text-shadow:0 0 10px var(--colorsecundaria),0 0 20px var(--colorsecundaria);
+    text-shadow:0 0 10px var(--corsecundaria),0 0 20px var(--corsecundaria);
 }
 
 
@@ -355,8 +355,8 @@ main{
     width: 0%;
     height: 100%;
     border-radius: 30px;
-    background: linear-gradient(90deg,var(--corprincipal),var(--colorsecundaria));
-    box-shadow:0 0 10px var(--colorsecundaria),0 0 20px var(--colorsecundaria);
+    background: linear-gradient(90deg,var(--corprincipal),var(--corsecundaria));
+    box-shadow:0 0 10px var(--corsecundaria),0 0 20px var(--corsecundaria);
     animation: carregar 3s ease forwards;
 }
 
@@ -390,7 +390,7 @@ footer{
     width: 100%;
     padding: 10px;
     background: var(--corheader);
-    border-top: 2px solid var(--colorsecundaria);
+    border-top: 2px solid var(--corsecundaria);
     box-shadow: 0 -10px 15px rgba(0, 212, 255, 0.3);
     display: flex;
     flex-direction: column;
@@ -418,10 +418,10 @@ footer{
 }
 
 .footer-logo span{
-    color: var(--colorsecundaria);
+    color: var(--corsecundaria);
     text-shadow:
-        0 0 10px var(--colorsecundaria),
-        0 0 20px var(--colorsecundaria);
+        0 0 10px var(--corsecundaria),
+        0 0 20px var(--corsecundaria);
 }
 
 .footer-direitos{
@@ -435,4 +435,267 @@ footer{
     font-size: 14px;
     max-width: 800px;
     line-height: 1.6;
+}
+
+.menu-hamburguer{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width:30px;
+    height:25px;
+    cursor:pointer;
+    z-index:1000;
+}
+ 
+.menu-hamburguer span{
+    width:100%;
+    height:3px;
+    background:var(--corsecundaria);
+    border-radius:10px;
+    transition:0.3s;
+}
+/*  RESPONSIVIDADE */
+
+@media(max-width: 1200px){
+
+    .home{
+        padding: 0 60px;
+        gap: 50px;
+    }
+
+    .home-texto h1{
+        font-size: 70px;
+    }
+
+    .home-img img{
+        width: 350px;
+    }
+
+}
+
+
+@media(max-width: 900px){
+
+
+    header{
+        padding: 20px 30px;
+    }
+
+    .menu-hamburguer{
+        display: flex;
+    }
+
+    .nav-links{
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        background: rgba(5, 8, 18, 0.97);
+        backdrop-filter: blur(12px);
+        padding: 40px 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border-bottom:1px solid rgba(0,212,255,.15);
+    }
+
+    .nav-links.ativo{
+        display: flex;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    header nav ul li a{
+        font-size: 24px;
+    }
+
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 150px 40px 80px;
+        gap: 60px;
+    }
+
+    .home-texto{
+        max-width: 100%;
+    }
+
+    .home-texto h1{
+        font-size: 65px;
+    }
+
+    .home-texto h2{
+        font-size: 32px;
+    }
+
+    .home-texto p{
+        font-size: 18px;
+    }
+
+    .home-botoes{
+        justify-content: center;
+    }
+
+    .home-img img{
+        width: 320px;
+    }
+
+
+    .categorias{
+        padding: 100px 40px;
+    }
+
+    .beneficios{
+        padding: 100px 40px;
+    }
+
+
+    .banner{
+        margin: 80px 40px;
+        padding: 60px 40px;
+    }
+
+    .banner h2{
+        font-size: 40px;
+    }
+
+    .banner p{
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width: 600px){
+
+
+    header{
+        height: 90px;
+        padding: 15px 20px;
+    }
+
+    #logo{
+        width: 55px;
+    }
+
+    .texto-logo{
+        font-size: 24px;
+    }
+
+    #imgHero{
+        width: 180px;
+    }
+
+    #titulo{
+        font-size: 35px;
+    }
+
+    .barra{
+        width: 260px;
+    }
+
+    .home{
+        padding: 130px 20px 60px;
+    }
+
+    .home-texto h1{
+        font-size: 50px;
+    }
+
+    .home-texto h2{
+        font-size: 26px;
+    }
+
+    .home-texto p{
+        font-size: 16px;
+    }
+
+    .home-botoes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-explorar,
+    .btn-ofertas{
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .home-img img{
+        width: 240px;
+    }
+
+    .section-titulo{
+        font-size: 32px;
+    }
+
+    .cards-container{
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        padding: 30px 25px;
+    }
+
+    .card h3{
+        font-size: 24px;
+    }
+
+    .beneficios-container{
+        grid-template-columns: 1fr;
+    }
+
+    .beneficio{
+        padding: 30px 25px;
+    }
+
+    .beneficio h3{
+        font-size: 22px;
+    }
+
+    .banner{
+        margin: 60px 20px;
+        padding: 50px 25px;
+    }
+
+    .banner h2{
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .banner p{
+        font-size: 16px;
+    }
+
+    footer{
+        padding: 40px 20px;
+    }
+
+    .footer-logo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo img{
+        width: 60px;
+    }
+
+    .footer-logo h2{
+        font-size: 24px;
+    }
+
+    .footer-direitos{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-info{
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
 }
