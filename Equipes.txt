@@ -1,0 +1,6 @@
+Arthur Caram Fiorese Herrada - RM 569578
+
+Projeto: ASTRO XP - Uma loja digital de games, gift cards e muitos outros produtos agradáveis ao público.
+
+link do github pages: https://fioresee.github.io/cp3-front-end/
+link do repositório no github: https://github.com/fioresee/cp3-front-end
